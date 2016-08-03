@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>地址联动选择</title>
+<link href="css/mobile-select-area.css" rel="stylesheet" type="text/css">
+<link href="css/dialog.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript" src="js/cityDate.js"></script>
+<script type="text/javascript" src="js/mobile-select-area.js"></script>
+</head>
+
+<body>
+
+静态数据源：<input type="text" id="txt_area" value="" />
+<script>
+
+				var selectArea2 = new MobileSelectArea();
+				selectArea2.init({trigger:'#txt_area',value:$('#txt_area').data('value'),data:json,eventName:'click',level:2});			
+		</script>
+</body>
+</html>
